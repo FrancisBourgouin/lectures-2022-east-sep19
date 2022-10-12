@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 50%;
+  padding: 0.5em;
+  text-align: center;
+}
+article div {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20vh;
+}
+article p {
+  font-weight: 900;
+  margin: 0;
+}
+article img {
+  width: 100%;
+}

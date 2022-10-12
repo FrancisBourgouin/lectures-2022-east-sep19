@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+    </header>
+    <main>
+      <h1>Some pictures</h1>
+      <form action="">
+        <input type="number" name="amount" placeholder="how many?" />
+      </form>
+      <% if(amount){ %>
+      <section>
+        <p>You want to see <%= amount %> pictures</p>
+      </section>
+      <section>
+        <% for(let picture of list){ %>
+        <img src="<%= picture.url %>" />
+        <p><%= picture.description %></p>
+        <% } %>
+      </section>
+      <% } %>
+    </main>
+  </body>
+</html>
