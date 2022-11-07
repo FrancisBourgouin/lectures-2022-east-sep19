@@ -38,3 +38,26 @@ newObject.bob = newBob;
 
 console.log(someObject);
 console.log(newObject);
+
+{
+  {
+  }
+  aaa;
+  {
+  }
+  {
+  }
+  {
+  }
+}
+{
+  {
+  }
+  aaa;
+  {
+  }
+  {
+  }
+  {
+  }
+}

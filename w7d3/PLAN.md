@@ -17,15 +17,20 @@ const plant = {
   id: 0,
   name: "",
   wateringInterval: 0,
-  lastWatered: "",
+  lastWateredDate: "",
 };
 ```
 
 ## PlantList
 
+Makes more sense to use an object because easier to target and update a plant
+
 ```jsx
 const plantListArr = [plant, plant];
 const plantListObj = { 1: plant, 2: plant };
+
+plantListObj[1];
+plantListArr.find((plant) => plant.id === 1);
 ```
 
 # Mock Data
@@ -74,7 +79,7 @@ const plantListObj = { 1: plant1, 2: plant2, 3: plant3, 4: plant4 };
 - main
   - h1 list title
   - article
-    - h1 type / name
+    - h1 name
     - h2 last watered date
     - button
 
@@ -90,6 +95,6 @@ const plantListObj = { 1: plant1, 2: plant2, 3: plant3, 4: plant4 };
 - App (state: listOfPlants, props: NEVER)
   - Header (state: no, props: amountOfPlants)
   - PlantList (state: no, props: listOfPlants[])
-    - PlantListItem (state: no, props:id,name,type,lastWateredDate,wateringInterval)
+    - PlantListItem (state: no, props:id,name,lastWateredDate,wateringInterval)
 
 Reason plan : to have a guideline

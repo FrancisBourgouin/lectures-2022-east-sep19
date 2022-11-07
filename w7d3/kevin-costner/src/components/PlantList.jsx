@@ -11,7 +11,6 @@ export default function PlantList(props) {
       <PlantListItem updateWateredDate={updateWateredDate} key={plant.id} {...plant} />
     ));
 
-  console.log(document.querySelector("section"));
   return (
     <section>
       <h1>List of plants</h1>
