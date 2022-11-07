@@ -124,3 +124,12 @@ const subjects = {
 - Make it fancy!
 
 # APIs
+
+
+statements -> group them -> show them
+
+
+[{subject, content}] -> [{name:"props", statements:[]}]
+
+
+getContentforSubject => Selector function (appoints for a day)
